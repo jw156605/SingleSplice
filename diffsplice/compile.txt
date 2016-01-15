@@ -1,0 +1,20 @@
+============================== Command lines to compile. Makefile is not available yet.
+
+export SAMTOOLS=./src/parse_bam/samtools-0.1.18/;
+g++ -I$SAMTOOLS -g -O2 -Wall ./src/parse_bam/parse_bam.cpp -o ./bin/parse_bam -lz -L$SAMTOOLS -lbam;
+
+g++ -m64 -o ./bin/parse_frag ./src/parse_frag/parse_frag.cpp	
+
+g++ -m64 -I ./src/diff_gtree_ref/wavelet/include/ -o ./bin/diff_gtree src/diff_gtree_ref/common_function.cpp src/diff_gtree_ref/decomposition.cpp src/diff_gtree_ref/estimation.cpp src/diff_gtree_ref/input_data.cpp src/diff_gtree_ref/output.cpp src/diff_gtree_ref/splice_graph.cpp src/diff_gtree_ref/cut_exon_bound.cpp src/diff_gtree_ref/wavelet2s.cpp src/diff_gtree_ref/main.cpp -L src/diff_gtree_ref/wavelet/lib/ -lfftw3 -lm -std=c++0x 
+
+g++ -m64 -o ./bin/diff_asm_analysis ./src/diff_asm_analysis/asm_def.cpp ./src/diff_asm_analysis/calc_function.cpp ./src/diff_asm_analysis/difftrans_test.cpp ./src/diff_asm_analysis/input_data.cpp ./src/diff_asm_analysis/permutation_test.cpp ./src/diff_asm_analysis/pairwise_test.cpp ./src/diff_asm_analysis/write_output.cpp ./src/diff_asm_analysis/main.cpp
+
+g++ -m64 -o ./bin/diff_expr_analysis ./src/diff_expr_analysis/gene_def.cpp ./src/diff_expr_analysis/calc_function.cpp ./src/diff_expr_analysis/difftrans_test.cpp ./src/diff_expr_analysis/input_data.cpp ./src/diff_expr_analysis/permutation_test.cpp ./src/diff_expr_analysis/pairwise_test.cpp ./src/diff_expr_analysis/write_output.cpp ./src/diff_expr_analysis/main.cpp
+
+g++ -m64 -o ./bin/diffsplice src/diffsplice/diffsplice.cpp
+
+
+
+
+
+

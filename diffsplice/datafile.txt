@@ -1,0 +1,8 @@
+Group1	sample1	/home/data/sample1.sorted_genome_alignments.bam
+Group1	sample2	/home/data/sample2.sorted_genome_alignments.bam
+Group1	sample3	/home/data/sample3.sorted_genome_alignments.bam
+Group1	sample4	/home/data/sample4.sorted_genome_alignments.bam
+Group1	sample5	/home/data/sample5.sorted_genome_alignments.bam
+Group2	sample6	/home/data/sample6.sorted_genome_alignments.bam
+Group2	sample7	/home/data/sample7.sorted_genome_alignments.bam
+Group2	sample8	/home/data/sample8.sorted_genome_alignments.bam

@@ -1,0 +1,53 @@
+#this file gives the settings for running diffsplice
+#lines starting with '#' are comments and will not be parsed
+#options and settings are delimited by tab (or any white spaces), please do not change the name of the options
+#unless specified otherwise, the parameters accept numeric values (integer or float) 
+
+
+### Parameters for splice graph construction
+
+# splice junction filtering can have 3 modes: group, nogroup, none
+# 1) in group mode, a putative junction will be kept if at least one group has averaged expression >= thresh_junctionfilter_groupwise
+# 2) in nogroup mode, a putative junction will be kept if it has expression >= thresh_junctionfilter_present_support in >= thresh_junctionfilter_num_present_samples samples across the entire dataset
+# 3) if no filtering is necessary, use none
+
+junctionfilter_mode	nogroup
+thresh_junctionfilter_groupwise	10
+thresh_junctionfilter_num_present_samples		34
+thresh_junctionfilter_present_support		20
+
+# only if a junction annotation file has been provided through command line -a option, should the program include all annotated splice junctions
+junction_annotation_as_white_list	yes
+
+#when trying to catalog alternative splicing and calculating the differential transcription signal, only consider the "major" transcript paths that have estimated proportion (averaged over all samples) no less than 5% in the ASM
+ignore_minor_alternative_splicing_variants	yes
+
+#expression threshold on exons (averaged over all samples)
+thresh_average_read_coverage_exon	5
+
+#expression threshold on introns (averaged over all samples)
+thresh_average_read_coverage_intron	30
+
+
+### Parameters for differential tests
+
+#false discovery rate threshold for differential test
+
+false_discovery_rate				0.01
+
+
+#minimum fold change for significantly upregulated gene expression from group1 to group2
+
+thresh_foldchange_up				2
+
+
+#maximum fold change for significantly downregulated gene expression from group1 to group2
+
+thresh_foldchange_down			0.5
+
+
+#minimum value square root of JSD for significant differential transcription from group1 to group2
+
+thresh_sqrtJSD				0.1
+
+

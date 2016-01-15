@@ -1,0 +1,5 @@
+MyNewGroupA	MySampleA1	2	/home/data/sample2.sorted_genome_alignments.bam
+MyNewGroupA	MySampleA2	4	/home/data/sample4.sorted_genome_alignments.bam
+MyNewGroupA	MySampleA3	5	/home/data/sample5.sorted_genome_alignments.bam
+MyNewGroupB	MySampleB1	6	/home/data/sample6.sorted_genome_alignments.bam
+MyNewGroupB	MySampleB2	8	/home/data/sample8.sorted_genome_alignments.bam
