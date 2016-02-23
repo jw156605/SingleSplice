@@ -1,0 +1,97 @@
+#this file gives the data files in the following format:
+#groupname	biological_replicate_name	technical_replicate_name	file
+#
+#the biological_replicate_name will be matched if a balanced permutation test is asked, for example,
+#g1	id1	s1	file_g1_id1_s1.sam
+#g1	id1	s2	file_g1_id1_s2.sam
+#g1	id2	s1	file_g1_id2_s1.sam
+#g1	id2	s2	file_g1_id2_s2.sam
+#g2	id1	s1	file_g2_id1_s1.sam
+#g2	id1	s2	file_g2_id1_s2.sam
+#g2	id2	s1	file_g2_id2_s1.sam
+#g2	id2	s2	file_g2_id2_s2.sam
+#
+#if a balanced permutation is not needed, the permutation test will randomly shuffle all samples in the groups
+#
+#now begin the data lines without the comment sign (#)
+
+g1	SRR1033853	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033853/alignments.sort.bam
+g1	SRR1033854	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033854/alignments.sort.bam
+g1	SRR1033855	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033855/alignments.sort.bam
+g1	SRR1033856	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033856/alignments.sort.bam
+g1	SRR1033857	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033857/alignments.sort.bam
+g1	SRR1033858	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033858/alignments.sort.bam
+g1	SRR1033859	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033859/alignments.sort.bam
+g1	SRR1033860	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033860/alignments.sort.bam
+g1	SRR1033861	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033861/alignments.sort.bam
+g1	SRR1033862	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033862/alignments.sort.bam
+g2	SRR1033863	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033863/alignments.sort.bam
+g2	SRR1033864	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033864/alignments.sort.bam
+g2	SRR1033865	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033865/alignments.sort.bam
+g2	SRR1033866	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033866/alignments.sort.bam
+g2	SRR1033867	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033867/alignments.sort.bam
+g2	SRR1033868	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033868/alignments.sort.bam
+g2	SRR1033869	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033869/alignments.sort.bam
+g2	SRR1033870	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033870/alignments.sort.bam
+g2	SRR1033871	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033871/alignments.sort.bam
+g2	SRR1033872	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033872/alignments.sort.bam
+g1	SRR1033875	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033875/alignments.sort.bam
+g1	SRR1033876	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033876/alignments.sort.bam
+g1	SRR1033877	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033877/alignments.sort.bam
+g1	SRR1033878	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033878/alignments.sort.bam
+g1	SRR1033879	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033879/alignments.sort.bam
+g1	SRR1033880	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033880/alignments.sort.bam
+g1	SRR1033881	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033881/alignments.sort.bam
+g1	SRR1033882	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033882/alignments.sort.bam
+g1	SRR1033883	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033883/alignments.sort.bam
+g2	SRR1033884	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033884/alignments.sort.bam
+g2	SRR1033885	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033885/alignments.sort.bam
+g2	SRR1033886	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033886/alignments.sort.bam
+g2	SRR1033887	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033887/alignments.sort.bam
+g2	SRR1033888	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033888/alignments.sort.bam
+g2	SRR1033889	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033889/alignments.sort.bam
+g2	SRR1033890	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033890/alignments.sort.bam
+g2	SRR1033891	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033891/alignments.sort.bam
+g2	SRR1033892	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033892/alignments.sort.bam
+g2	SRR1033893	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033893/alignments.sort.bam
+g1	SRR1033894	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033894/alignments.sort.bam
+g1	SRR1033895	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033895/alignments.sort.bam
+g1	SRR1033896	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033896/alignments.sort.bam
+g1	SRR1033897	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033897/alignments.sort.bam
+g1	SRR1033898	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033898/alignments.sort.bam
+g1	SRR1033899	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033899/alignments.sort.bam
+g1	SRR1033900	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033900/alignments.sort.bam
+g1	SRR1033901	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033901/alignments.sort.bam
+g1	SRR1033902	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033902/alignments.sort.bam
+g1	SRR1033903	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033903/alignments.sort.bam
+g2	SRR1033904	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033904/alignments.sort.bam
+g2	SRR1033905	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033905/alignments.sort.bam
+g2	SRR1033906	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033906/alignments.sort.bam
+g2	SRR1033907	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033907/alignments.sort.bam
+g2	SRR1033908	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033908/alignments.sort.bam
+g2	SRR1033909	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033909/alignments.sort.bam
+g2	SRR1033910	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033910/alignments.sort.bam
+g2	SRR1033911	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033911/alignments.sort.bam
+g2	SRR1033912	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033912/alignments.sort.bam
+g2	SRR1033913	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033913/alignments.sort.bam
+g1	SRR1033914	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033914/alignments.sort.bam
+g1	SRR1033915	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033915/alignments.sort.bam
+g1	SRR1033916	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033916/alignments.sort.bam
+g1	SRR1033917	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033917/alignments.sort.bam
+g1	SRR1033918	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033918/alignments.sort.bam
+g1	SRR1033919	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033919/alignments.sort.bam
+g1	SRR1033920	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033920/alignments.sort.bam
+g1	SRR1033921	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033921/alignments.sort.bam
+g1	SRR1033922	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033922/alignments.sort.bam
+g1	SRR1033923	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033923/alignments.sort.bam
+g2	SRR1033924	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033924/alignments.sort.bam
+g2	SRR1033925	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033925/alignments.sort.bam
+g2	SRR1033926	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033926/alignments.sort.bam
+g2	SRR1033927	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033927/alignments.sort.bam
+g2	SRR1033928	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033928/alignments.sort.bam
+g2	SRR1033929	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033929/alignments.sort.bam
+g2	SRR1033930	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033930/alignments.sort.bam
+g2	SRR1033931	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033931/alignments.sort.bam
+g2	SRR1033932	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033932/alignments.sort.bam
+g2	SRR1033933	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033933/alignments.sort.bam
+g1	SRR1033934	/proj/prins_lab/Josh/SingleCell/DistalLungEpithelium/SRR1033934/alignments.sort.bam

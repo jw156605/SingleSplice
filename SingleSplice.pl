@@ -37,7 +37,7 @@ sub getReadDepth
     my @total_mapped;
     my @cell_scale_factors;
 
-    #Lines 2, 3, and 7
+    #Lines 2, 3, and 9
     open(IN, $infile);
     my $line = <IN>;
     $line = <IN>;
@@ -68,7 +68,7 @@ sub getReadDepth
 sub testRatioChange
 {
     my ($expr_file,$a0,$a1tilde,$b0,$b1,$num_perms) = @_;
-    my $test_result = `test_ratio_change $expr_file $a0 $a1tilde $b0 $b1 $num_perms`;
+    my $test_result = `./test_ratio_change $expr_file $a0 $a1tilde $b0 $b1 $num_perms`;
     my @results = split(/\s+/,$test_result);
     return (\@results);
 }
@@ -131,12 +131,9 @@ END_USAGE
 my ($a0,$a1tilde,$b0,$b1) = fitNoiseModel($tech_spike_ins);
 my ($total_mapped,$cell_scale_factors) = getReadDepth($read_depth_file);
 
-print Dumper($cell_scale_factors);
-exit;
-
-my $sig = 0.021358;
 my $threshold = 10;
 my $top_k_paths = 10;
+my $sig = 0.05;
 
 my $paths_read = 0;
 my $paths_found = 0;
@@ -292,7 +289,12 @@ while (my $line = <IN>) {
       }
   }  
 }
+
 print "\n$paths_found ASM paths found after filtering for expression level.\n";
 close OUT;
 close OUT2;
 close SOUT;
+
+system("rm expr.csv");
+system("rm path_coverage.csv");
+system("rm significant_paths.csv");
