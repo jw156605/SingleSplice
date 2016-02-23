@@ -18,7 +18,7 @@ Installation instructions:
   variable in the Makefile to point to the installation directory.
 - Run the Makefile by simply typing: make
 
-Sample input files for SingleSplice are provided. The FASTQ and BAM files are not included due to their large size.
+Sample input and output files for SingleSplice are provided. The FASTQ and BAM files are not included due to their large size.
 To reproduce these results, follow the set of steps below:
 
 - Download the FASTQ files from the 80 E18.5 cells in GEO record GSE52583.
@@ -38,4 +38,4 @@ to run on all chromosomes, these files must be concatenated.
 
 perl SingleSplice.pl -a sample_input/asm_all_chr.txt -p 1000 -s 80 -t sample_input/ERCC_rpkms_size_norm_median.csv -r sample_input/total_reads_DistalLungEpithelium.csv -g sample_input/groups.csv
 
-Note: The file "groups.csv" is a dummy file for illustrative purposes only. Theactual cell cycle stages in this dataset are unknown. Accordingly, the group change p-values are not significant.
+Note: The file "groups.csv" is a dummy file for illustrative purposes only. The actual cell cycle stages in this dataset are unknown. Accordingly, the group change p-values are not significant.
