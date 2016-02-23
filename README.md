@@ -26,6 +26,7 @@ To reproduce these results, follow the set of steps below:
 - Run diffsplice on the indexed BAM files:
 
 cd diffsplice
+
 bin/diffsplice -o <output_dir> -m full -s ../sample_input/sample_config.txt ../sample_input/sample_datafile.txt
 
 - Align the reads to the ERCC transcript sequences using your favorite unspliced aligner (e.g., bowtie2).
@@ -34,4 +35,5 @@ bin/diffsplice -o <output_dir> -m full -s ../sample_input/sample_config.txt ../s
 as described in the paper.
 - Run SingleSplice using the ASM abundance estimates contained in result/asm/. Note that diffsplice outputs a file for each chromosome, so
 to run on all chromosomes, these files must be concatenated.
+
 perl SingleSplice.pl -a sample_input/asm_all_chr.txt -p 1000 -s 80 -t sample_input/ERCC_rpkms_size_norm_median.csv -r sample_input/total_reads_DistalLungEpithelium.csv -g sample_input/groups.csv
