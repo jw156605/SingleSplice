@@ -37,3 +37,5 @@ as described in the paper.
 to run on all chromosomes, these files must be concatenated.
 
 perl SingleSplice.pl -a sample_input/asm_all_chr.txt -p 1000 -s 80 -t sample_input/ERCC_rpkms_size_norm_median.csv -r sample_input/total_reads_DistalLungEpithelium.csv -g sample_input/groups.csv
+
+Note: The file "groups.csv" is a dummy file for illustrative purposes only. Theactual cell cycle stages in this dataset are unknown. Accordingly, the group change p-values are not significant.
