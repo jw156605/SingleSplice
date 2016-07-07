@@ -11,7 +11,7 @@ Algorithm for detecting alternative splicing in a population of single cells
 - Clone the SingleSplice repository:
   `git clone https://github.com/jw156605/SingleSplice`
 - To install the Boost library, you can run the following commands:
-  ```
+- ```
   cd SingleSplice/
   wget https://sourceforge.net/projects/boost/files/boost/1.60.0/boost_1_60_0.tar.gz
   tar -xvf boost_1_60_0.tar.gz
