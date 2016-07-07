@@ -11,7 +11,7 @@ Algorithm for detecting alternative splicing in a population of single cells
 - Clone the SingleSplice repository:
   `git clone https://github.com/jw156605/SingleSplice`
 - To install the Boost library, you can run the following commands:
-- ```
+```
   cd SingleSplice/
   wget https://sourceforge.net/projects/boost/files/boost/1.60.0/boost_1_60_0.tar.gz
   tar -xvf boost_1_60_0.tar.gz
@@ -32,7 +32,6 @@ To reproduce these results, follow the set of steps below:
 cd diffsplice
 bin/diffsplice -o <output_dir> -m full -s ../sample_input/sample_config.txt ../sample_input/sample_datafile.txt
 ```
-
 - Align the reads to the ERCC transcript sequences using your favorite unspliced aligner (e.g., bowtie2).
 - Count the numbers of mapped biological and spike-in reads and use this information to compute "cell size" values.
 - Compute normalized coverage in units of reads per kilobase per million reads (RPKM) for the ERCC transcripts. Normalize to median cell size
